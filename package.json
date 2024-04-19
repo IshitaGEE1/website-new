@@ -1,0 +1,35 @@
+{
+  "name": "productsup",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test-prebuild": "node test/downloadpaths.js",
+    "test-postbuild": "jest test/post"
+  },
+  "dependencies": {
+    "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/style-resources": "~1.2.1",
+    "@splidejs/splide": "^4.0.7",
+    "@splidejs/splide-extension-intersection": "^0.2.0",
+    "axios": "^0.21.4",
+    "contentful": "8.3.x",
+    "core-js": "^3.9.1",
+    "html-escaper": "3.0.3",
+    "normalize.css": "8.0.1",
+    "nuxt": "2.16.3",
+    "nuxt-basic-auth-module": "^1.4.0",
+    "nuxt-i18n": "6.28.1",
+    "showdown": "2.1.0",
+    "portal-vue": "2.1.7"
+  },
+  "devDependencies": {
+    "@nuxt/types": "2.16.3",
+    "jest": "^27.2.1",
+    "sass": "1.50.0",
+    "sass-loader": "10.3.1"
+  }
+}

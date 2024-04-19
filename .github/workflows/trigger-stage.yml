@@ -1,0 +1,15 @@
+name: trigger-stage
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
+
+jobs:
+  trigger:
+    name: Trigger-Stage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Build
+        run: curl -X POST https://www.productsup.com/api/publish/stage/publish_stage

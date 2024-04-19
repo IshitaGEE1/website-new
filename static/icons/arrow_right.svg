@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="12 12 32 30">
+  <g id="Icons_ico_arrow_right" data-name="Icons/ico_arrow_right">
+    <g id="Arrow">
+      <line id="Shape" class="cls-2" x1="6" y1="11" x2="16" y2="11" fill="none" stroke="#3b3b3b" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline id="Shape-2" data-name="Shape" class="cls-2" points="12 6 16 11 12 16" fill="none" stroke="#3b3b3b" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

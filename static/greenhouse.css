@@ -1,0 +1,237 @@
+/* styling the greenhouse job board 2.1 */
+
+@font-face {
+  font-family: 'Good Headline Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://use.typekit.net/af/189a26/00000000000000007735ab3e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('https://www.productsup.com/fonts/roboto-condensed-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('https://www.productsup.com/fonts/roboto-condensed-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('https://www.productsup.com/fonts/nunito-v16-latin-regular.woff2') format('woff2');
+}
+
+:root {
+  --black: #070707;
+  --light-grey: #f9f9fa;
+  --dark-blue: #2441b2;
+  --blue: #20c4f4;
+  --light-blue: #d2f3fd;
+  --red: #ed362b;
+
+  --color-highlight-blue: #20c4f4;
+  --color-highlight-red: #ed362b;
+  --color-font: #3b3b3b;
+}
+
+/*
+ * STYLES
+ *
+ */
+html, body {
+  font-family: "Nunito", "Arial" !important;
+  color: var(--color-font);
+  letter-spacing: .5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Good Headline Pro", "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.109375rem;
+  text-align: left;
+}
+
+h1 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h2#board_title {
+  font-family: "Nunito", "Arial" !important;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  margin-top: 3rem;
+  margin-bottom: unset;
+  font-size: 2.5rem !important;
+  line-height: 1.1;
+}
+
+h4, #application .heading {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  line-height: 1.1em;
+}
+
+h1::after {
+  display: block;
+  content: '';
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: 17.875rem;
+  border-bottom: 1.1875rem;
+  border-bottom-color: var(--pink);
+  border-bottom-style: solid;
+}
+
+h2,
+h3 {
+  letter-spacing: 1px;
+  line-height: 1.1em;
+  margin-bottom: 20px;
+}
+
+li, p, a, .location, label, input, .unstyled-button.link-button {
+  font-size: 1.25rem !important;
+}
+
+ul {
+  padding-left: 2rem;
+  list-style-image: url('/icons/bulletpoint_red.svg');
+}
+
+ul > li {
+  padding-left: 10px;
+}
+
+ul > li:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+div.location {
+  color: var(--blue);
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+a, .unstyled-button.link-button {
+  color: var(--color-highlight-red);
+}
+
+.field label span p a {
+  font-size: 1rem !important;
+}
+
+section + section,
+section > section {
+  margin-top: 3rem;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+#wrapper {
+  max-width: 100%;
+  padding: unset !important;
+}
+
+.opening {
+  margin-bottom: 1rem;
+}
+
+#custom_fields p {
+  font-size: 1rem !important;
+}
+
+#app_body {
+  max-width: 100% !important;
+}
+
+.opening {
+  margin-bottom: 2rem;
+}
+
+.opening a {
+  font-size: 1.5rem !important;
+}
+
+.filter-container {
+  margin-bottom: 2rem;
+  background: #FAFAFA;
+  padding: 20px;
+  margin-right: -4px !important;
+}
+
+div.field {
+  margin-bottom: 25px !important;
+}
+
+#submit_app {
+  background: #ed362b !important;
+  font-family: "Good Headline Pro", "Roboto Condensed", sans-serif !important;
+  font-size: 1.6rem !important;
+  letter-spacing: .0175em !important;
+  font-weight: bold !important;
+  border-radius: 25px !important;
+  padding: 18px 25px !important;
+  text-shadow: none !important;
+}
+
+strong {
+  font-weight: bold;
+  color: #000;
+}
+
+@media (max-width: 640px) {
+  #app_body .logo-container {
+    height: 0 !important;
+  }
+
+  .unstyled-button.link-button {
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: 600;
+    background-image: -webkit-linear-gradient(top, #fafafa, #f4f4f4);
+    border: solid 1px #ddd !important;
+    color: #222222 !important;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 20px;
+    line-height: 19px;
+    margin-bottom: 1em;
+  }
+}

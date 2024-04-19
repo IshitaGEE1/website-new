@@ -1,0 +1,82 @@
+const ContentTypes = {
+  // Pages
+  pages: {
+    article: 'articlePage',
+    channelCategoryPage: 'channelCategoryPage',
+    channelOverviewPage: 'channelOverviewPage',
+    channelPage: 'channelPage',
+    companyNews: 'companyNewsPage',
+    core: 'corePage',
+    customer: 'customerPage',
+    event: 'eventPage',
+    glossary: 'glossaryPage',
+    glossaryTerm: 'glossaryTermPage',
+    glossaryCategory: 'glossaryCategoryPage',
+    glossaryListingGroup: 'glossaryListingGroupPage',
+    partner: 'PartnerPage',
+    ppc: 'landingPage'
+  },
+
+  // "Modules"
+  modules: {
+    actionBar: 'moduleActionBar',
+    bannerAddonMarquee: 'moduleBannerAddonMarquee',
+    blogPostsTeaser: 'moduleBlogPostsTeaser',
+    carousel: 'moduleCarousel',
+    contentGrid: 'moduleContentGrid',
+    ctaBanner: 'moduleCtaBanner',
+    customerQoute: 'moduleCustomerQuote',
+    embeddedGreenhouse: 'moduleEmbeddedGreenhouse',
+    embeddedVideo: 'moduleEmbeddedVideo',
+    faqSection: 'moduleFaqSection',
+    feature: 'moduleFeature',
+    filterGrid: 'moduleFilterGrid',
+    fullWidthImageBanner: 'moduleFullWidthImageBanner',
+    glossaryListingBar: 'moduleGlossaryListingBar',
+    headline: 'moduleHeadline',
+    hubspotBanner: 'moduleHubspotBanner',
+    imageWithText: 'moduleImageWithText',
+    landingPageFooter: 'moduleLandingPageFooter',
+    markdownArea: 'moduleMarkdownArea',
+    pageBanner: 'modulePageBanner',
+    pageFooter: 'modulePageFooter',
+    pageHeader: 'modulePageHeader',
+    partnerBanner: 'modulePartners',
+    ratingBanner: 'moduleRatingBanner',
+    simplePageBanner: 'moduleSimplePageBanner',
+    socialMediaShareBanner: 'moduleSocialMediaShareBanner',
+    splitBanner: 'moduleSplitBanner',
+    steppedGrid: 'moduleSteppedGrid',
+    stickyCta: 'moduleStickyCta',
+    typeFormWidget: 'moduleTypeFormWidget'
+  },
+
+  // "Elements"
+  elements: {
+    author: 'author',
+    background: 'elementBackground',
+    bioCard: 'elementBioCard',
+    card: 'elementCard',
+    category: 'elementCategory',
+    categoryLink: 'elementCategoryLink',
+    collapsable: 'elementCollapsable',
+    downloadButton: 'elementDownloadButton',
+    externalLink: 'elementExternalLink',
+    faqItem: 'faqItem',
+    filterBar: 'filterBar',
+    hubspotButton: 'elementHubspotButton',
+    hubspotForm: 'elementHubspotForm',
+    label: 'elementLabel',
+    link: 'elementLink',
+    navigationButton: 'elementNavigationButton',
+    navigationCard: 'navigationCard',
+    navigationItem: 'navigationItem',
+    navigationMenu: 'elementNavigationMenu',
+    navigationSection: 'elementNavigationSection',
+    number: 'number',
+    partnerBade: 'partnerBadge',
+    tag: 'elementTag',
+  }
+};
+
+export default ContentTypes;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="133px" height="133px" viewBox="0 0 133 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path Copy</title>
+    <defs>
+        <polygon id="path-1" points="235 58.7616209 320.598548 58.7616209 320.598548 145 368 97.8739081 368 12 281.614148 12"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design/All/Visuals/" transform="translate(-235.000000, -12.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Path-Copy" fill="#03A8D3" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

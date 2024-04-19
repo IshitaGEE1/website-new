@@ -1,0 +1,15 @@
+name: trigger-prod
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  trigger:
+    name: Trigger-Prod
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Build
+        run: curl -X POST https://www.productsup.com/api/publish/prod/publish_unitb

@@ -1,0 +1,22 @@
+{
+  "name": "Contenful-Productsup Schema",
+  "schemaPath": "./plugins/graphql/schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Dev Environment": {
+        "url": "https://graphql.contentful.com/content/v1/spaces/q17uls4wkkdz/environments/stage",
+        "headers": {
+          "Authorization": "Bearer -hGtrR28CV2kk9-OQPRsx6rYDXNaI3WxAgshVJLBT6c"
+        },
+        "introspect": false
+      },
+      "Master Environment": {
+        "url": "https://graphql.contentful.com/content/v1/spaces/q17uls4wkkdz/environments/master",
+        "headers": {
+          "Authorization": "Bearer -hGtrR28CV2kk9-OQPRsx6rYDXNaI3WxAgshVJLBT6c"
+        },
+        "introspect": true
+      }
+    }
+  }
+}

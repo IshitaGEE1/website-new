@@ -1,0 +1,92 @@
+@import "variables";
+
+@mixin media-breakpoint-less-than($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-up($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-between($from, $to) {
+  @media (min-width: $from) and (max-width: $to) {
+    @content;
+  }
+}
+
+@mixin set-box-shadow {
+  box-shadow: 0 0.3125rem 0.75rem 0.0625rem rgba(0, 0, 0, 0.07);
+}
+
+@mixin set-module-width {
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(1200 / 1440 * 100vw);
+
+  @include tablet {
+    max-width: $max-width-tablet;
+  }
+
+  @include desktop {
+    max-width: $max-width-desktop;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile-tablet - 0.0625rem) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-mobile-tablet) and (max-width: $breakpoint-tablet-desktop - 0.0625rem) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-tablet-desktop) {
+    @content;
+  }
+}
+
+@mixin tablet-above {
+  @media (min-width: $breakpoint-mobile-tablet) {
+    @content;
+  }
+}
+
+
+@mixin tablet-below {
+  @media (max-width: $breakpoint-tablet-desktop - 0.0625rem) {
+    @content;
+  }
+}
+
+@mixin navigation-collapse-below {
+  @media (max-width: $navigation-collapse-breakpoint - 0.0625rem) {
+    @content;
+  }
+}
+
+@mixin navigation-collapse-above {
+  @media (min-width: $navigation-collapse-breakpoint) {
+    @content;
+  }
+}
+
+@mixin set-flex-grid($cols) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: -1rem;
+
+  > * {
+    margin: 1rem;
+    flex-basis: calc(100% / #{$cols} - 2rem);
+  }
+}

@@ -1,0 +1,42 @@
+<template>
+  <base-link class="u-share-button u-share-button--linkedin" :url="url" :external="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+      <g fill="none" fill-rule="evenodd">
+        <g fill="#1F2732" fill-rule="nonzero">
+          <g>
+            <path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0zm-4.4 24H8.3V13.3h3.3V24zM9.9 11.9c-1 0-1.9-.9-1.9-2C8 8.9 8.9 8 9.9 8c1.1 0 1.9.9 1.9 1.9 0 1.1-.8 2-1.9 2zM24 24h-3.3v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V24h-3.3V13.3h3.2v1.5c.4-.8 1.5-1.7 3.1-1.7 3.4 0 4 2.2 4 5.1V24z" transform="translate(-495.000000, -219.000000) translate(495.000000, 219.000000)"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </base-link>
+</template>
+
+<script>
+import BaseImage from '../_base/BaseImage';
+import BaseLink from '../_base/BaseLink';
+
+const SHARE_URL = 'https://www.linkedin.com/sharing/share-offsite/?url=';
+
+export default {
+  name: 'ShareButtonLinkedin',
+  components: { BaseLink, BaseImage },
+  computed:  {
+    url() {
+      return SHARE_URL + process.env.HOSTNAME + this.$route.fullPath;
+    },
+  }
+}
+</script>
+
+<style scoped lang="scss">
+.u-share-button {
+  display: block;
+
+  svg {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+</style>

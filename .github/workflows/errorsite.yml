@@ -1,0 +1,23 @@
+name: error-site
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deployerrorsite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    name: Deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESSS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+
+      - name: Upload Site
+        run: aws s3 sync errorpage/ s3://productsup-error-site/ --delete

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /_nuxt/
+Disallow: /*?
+Sitemap: https://www.productsup.com/sitemap.xml

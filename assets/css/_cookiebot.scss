@@ -1,0 +1,39 @@
+// style cookiebot consent banner
+#CybotCookiebotDialog {
+  #CybotCookiebotDialogBody {
+    max-width: 57.5rem;
+
+    a,
+    div,
+    #CybotCookiebotDialogBodyContentControls,
+    #CybotCookiebotDialogBodyContentTitle {
+      font-family: "Arial", sans-serif;
+    }
+
+    a.CybotCookiebotDialogBodyButton {
+      @extend %button;
+
+      width: auto !important;
+      font-size: 0.8rem;
+      @include media-breakpoint-up($device-min-width-desktop) {
+        font-size: 0.9rem;
+      }
+    }
+
+    a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+      background-color: $color-productsup-light-grey;
+      border-color: $color-productsup-light-grey;
+    }
+  }
+
+  #CybotCookiebotDialogDetail {
+    #CybotCookiebotDialogDetailBody {
+      max-width: 57.5rem;
+    }
+  }
+
+  //hide for now
+  #cookie-notice {
+    display: none;
+  }
+}

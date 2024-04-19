@@ -1,0 +1,146 @@
+[
+  {
+    "to": "/about/company/", 
+    "from": "/about/"
+  }, 
+  {
+    "to": "/about/company/", 
+    "from": "/company/"
+  }, 
+  {
+    "to": "/customers/success-stories/", 
+    "from": "/customers/"
+  }, 
+  {
+    "to": "/de/kunden/erfolgsgeschichten/", 
+    "from": "/de/kunden/"
+  }, 
+  {
+    "to": "/", 
+    "from": "/en/"
+  }, 
+  {
+    "to": "/resources/events/", 
+    "from": "/events/"
+  }, 
+  {
+    "to": "/", 
+    "from": "/home/"
+  }, 
+  {
+    "to": "/news/", 
+    "from": "/media/"
+  }, 
+  {
+    "to": "/partners/meta/", 
+    "from": "/partners/facebook/"
+  }, 
+  {
+    "to": "https://platform.productsup.com/login", 
+    "from": "/login"
+  }, 
+  {
+    "to": "/careers/open-roles/", 
+    "from": "/fr/carriere/open-roles/"
+  }, 
+  {
+    "to": "/careers/open-roles/", 
+    "from": "/de/karriere/offene-stellen/"
+  }, 
+  {
+    "to": "/careers/open-roles/", 
+    "from": "/it/opportunita/posizioni-aperte/"
+  }, 
+  {
+    "to": "/careers/open-roles/", 
+    "from": "/es/empleos/ofertas-de-trabajo-actuales/"
+  }, 
+  {
+    "to": "/products/advertising-px/", 
+    "from": "/solutions/social-commerce/"
+  }, 
+  {
+    "to": "/de/produkte/advertising-px/", 
+    "from": "/de/loesungen/social-commerce/"
+  }, 
+  {
+    "to": "/fr/produits/advertising-px/", 
+    "from": "/fr/solutions/social-commerce/"
+  }, 
+  {
+    "to": "/it/prodotti/advertising-px/", 
+    "from": "/it/soluzioni/social-commerce/"
+  }, 
+  {
+    "to": "/es/productos/advertising-px/", 
+    "from": "/es/soluciones/social-commerce/"
+  }, 
+  {
+    "to": "/products/onboarding-px/", 
+    "from": "/solutions/seller-vendor-onboarding/"
+  }, 
+  {
+    "to": "/de/produkte/onboarding-px/", 
+    "from": "/de/loesungen/integration-haendler-hersteller-kataloge/"
+  }, 
+  {
+    "to": "/fr/produits/onboarding-px/", 
+    "from": "/fr/solutions/integration-catalogues-fournisseurs/"
+  }, 
+  {
+    "to": "/it/prodotti/onboarding-px/", 
+    "from": "/it/soluzioni/integrazione-di-venditori/"
+  }, 
+  {
+    "to": "/es/productos/onboarding-px/", 
+    "from": "/es/soluciones/incorporacion-vendedores-proveedores/"
+  }, 
+  {
+    "to": "/products/marketplaces-px/", 
+    "from": "/solutions/marketplace-experience/"
+  }, 
+  {
+    "to": "/de/produkte/marketplaces-px/", 
+    "from": "/de/loesungen/marktplatz-loesungen/"
+  }, 
+  {
+    "to": "/fr/produits/marketplaces-px/", 
+    "from": "/fr/solutions/marketplace-experience/"
+  }, 
+  {
+    "to": "/it/prodotti/marketplaces-px/", 
+    "from": "/it/soluzioni/esperienza-nei-marketplace/"
+  }, 
+  {
+    "to": "/es/productos/marketplaces-px/", 
+    "from": "/es/soluciones/experienca-de-marketplaces/"
+  }, 
+  {
+    "to": "/products/performance-insights-px/", 
+    "from": "/solutions/insights/"
+  }, 
+  {
+    "to": "/de/produkte/performance-insights-px/", 
+    "from": "/de/loesungen/insights/"
+  }, 
+  {
+    "to": "/products/retail-px/", 
+    "from": "/solutions/product-content-syndication/"
+  }, 
+  {
+    "to": "/de/produkte/retail-px/", 
+    "from": "/de/loesungen/product-content-syndication/"
+  }, 
+  {
+    "to": "/fr/produits/retail-px/", 
+    "from": "/fr/solutions/syndication-contenu-produit/"
+  }, 
+  {
+    "to": "/it/prodotti/retail-px/", 
+    "from": "/it/soluzioni/distribuzione-dei-contenuti-di-prodotto/"
+  }, 
+  {
+    "to": "/es/productos/retail-px/", 
+    "from": "/es/soluciones/sindicacion-de-contenidos-de-productos/"
+  }
+]

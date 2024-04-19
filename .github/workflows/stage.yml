@@ -1,0 +1,93 @@
+name: stage
+
+concurrency:
+  group: publish-stage
+  cancel-in-progress: false
+
+on:
+  repository_dispatch:
+    branches:
+      - develop
+    types:
+      - webhook_stage
+      - publish_stage
+
+jobs:
+  publish:
+    runs-on: [self-hosted, stage]
+    timeout-minutes: 30
+    name: Deploy
+    env:
+      CONTENTFUL_ENVIRONMENT: stage
+      USE_CACHE: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: 'develop'
+
+      - name: Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESSS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+
+      - name: Ensure yarn
+        run: npm i -g yarn
+
+      - name: Upate dependencies
+        run: yarn
+
+      - name: Start Cache
+        uses: nick-invision/retry@v2
+        with:
+          max_attempts: 5
+          timeout_seconds: 30
+          command: docker-compose -f /home/ec2-user/contentful-cache-proxy/docker-compose.yml up -d
+
+      - name: Invalidate Cache
+        run: curl -X POST http://localhost:80/invalidate
+
+      - name: Fetch sites to be construct
+        run: yarn test-prebuild
+
+      - name: Generate
+        run: yarn run generate
+
+      - name: Assert all sites were generated
+        run: yarn test-postbuild
+
+      - name: Upload Site
+        run: aws s3 sync dist/ s3://staging.productsup.com/ --delete
+
+      - name: Update Caching Policy
+        run: aws s3 cp s3://staging.productsup.com/_nuxt/ s3://staging.productsup.com/_nuxt/ --recursive --acl "public-read" --cache-control "public, max-age=31536000"
+
+      - name: Update Caching Policy
+        run: aws s3 cp s3://staging.productsup.com/icons/ s3://staging.productsup.com/icons/ --recursive --acl "public-read" --cache-control "public, max-age=31536000"
+
+      - name: Update Caching Policy
+        run: aws s3 cp s3://staging.productsup.com/fonts/ s3://staging.productsup.com/fonts/ --recursive --acl "public-read" --cache-control "public, max-age=31536000"
+
+      - name: Invalidate CloudFront
+        uses: nick-invision/retry@v2
+        with:
+          max_attempts: 3
+          timeout_seconds: 60
+          command: aws cloudfront create-invalidation --distribution-id E2R0KX3HANUUGB --paths "/*"
+
+      - name: Report Status
+        if: always()
+        uses: ravsamhq/notify-slack-action@v1
+        with:
+          status: ${{ job.status }}
+          notify_when: 'failure'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.ACTION_MONITORING_SLACK }}
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-2" points="0 0 32 0 32 31.9995 0 31.9995"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="#1F2732" fill-rule="evenodd">
+        <g id="Design/All/SocialSharing/Footer" transform="translate(-818.000000, -140.000000)">
+            <g id="Group-3" transform="translate(590.000000, 140.000000)">
+                <g transform="translate(228.000000, 0.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M16,15.9995 L7,8.9995 L25,8.9995 L16,15.9995 Z M25,22.9995 L7,22.9995 L7,10.9995 L16,17.9995 L25,10.9995 L25,22.9995 Z M16,-0.0005 C7.2,-0.0005 0,7.1995 0,15.9995 C0,24.8005 7.2,31.9995 16,31.9995 C24.8,31.9995 32,24.8005 32,15.9995 C32,7.1995 24.8,-0.0005 16,-0.0005 L16,-0.0005 Z" id="Fill-1" fill="#1F2732" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

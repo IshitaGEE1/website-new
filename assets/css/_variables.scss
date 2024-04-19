@@ -1,0 +1,19 @@
+$color-productsup-cta--red: #ed362b;
+$color-productsup-dark-grey: #4F5B66;
+$color-productsup-light-grey: #A7ADBA;
+
+$gutter-size: 2rem;
+$header-navigation-gutter-size: calc(#{$gutter-size} - 0.4rem);
+
+$max-width-desktop: 75rem;
+$max-width-tablet: 64rem;
+
+$device-max-width-mobile: 40rem;
+$device-min-width-tablet: 36rem;
+$device-max-width-tablet: 63.9375rem;
+$device-min-width-desktop: 64rem;
+
+$navigation-collapse-breakpoint: 64rem;
+
+$breakpoint-mobile-tablet: $device-min-width-tablet;
+$breakpoint-tablet-desktop: $device-min-width-desktop;

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" width="32" height="18" viewBox="0 0 32 18">
+  <path
+    d="M9.336 10.182c-.173 0-.349-.033-.526-.098a1.386 1.386 0 0 1-.506-.34L.286 1.602C.092 1.405-.003 1.188 0 .951.004.715.102.498.297.301.491.104.706.005.942.005c.237 0 .452.099.646.296l7.748 7.868L17.095.291c.194-.198.407-.294.64-.291.233.004.446.104.64.301.195.197.292.416.292.656 0 .24-.097.458-.292.655l-8.007 8.132a1.435 1.435 0 0 1-.488.34 1.478 1.478 0 0 1-.544.098Z"
+    style="fill-rule:nonzero" transform="translate(0 .273) scale(1.71428)"/>
+</svg>
